@@ -10,12 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define MAC 0
-#define WIN 1
-#define RIG 2
-#define LEF 3
-#define TRI 4
-#define MOUSE 5
+#define BASE    0
+#define NUM     1
+#define SYM     2
+#define NAV     3
+#define MED     4
 
 / {
     chosen {
@@ -57,62 +56,57 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "DEFAULT";
             bindings = <
-&kp Q  &kp W       &kp E        &kp R        &kp T         &kp Y      &kp U        &kp I        &kp O       &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F   &kp G         &kp H      &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp BSPC
-&kp Z  &kp X       &kp C        &kp V        &kp B         &kp N      &kp M        &kp COMMA    &kp DOT     &kp ENTER
-                                &lt LEF TAB  &kp LSHIFT     &kp SPACE &lt RIG TAB
+    &kp Q       &kp W       &kp F       &kp P       &kp B                      &kp J           &kp L       &kp U       &kp Y           &kp SEMI
+    &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T &kp G                      &kp M           &ht LSHFT N &ht LCTRL E &ht RALT I      &ht LGUI O
+    &kp Z       &kp X       &kp C       &kp D       &kp V                      &kp K           &kp H       &kp COMMA   &kp DOT         &kp FSLH
+                                        &lt MED BSPC &lt NAV DEL               &lt NUM SPACE   &lt SYM RET
             >;
         };
 
-        windows_layer {
-            display-name = "WIN";
+        num_layer {
             bindings = <
-&kp Q  &kp W       &kp E       &kp R        &kp T         &kp Y      &kp U        &kp I       &kp O       &kp P
-&kp A  &ht LALT S  &ht LGUI D  &ht LCTRL F  &kp G         &kp H      &ht RCTRL J  &ht RGUI K  &ht RALT L  &kp BSPC
-&kp Z  &kp X       &kp C       &kp V        &kp B         &kp N      &kp M        &kp COMMA   &kp DOT     &kp ENTER
-                               &lt LEF TAB  &kp LSHIFT     &kp SPACE &lt RIG TAB
+    &kp LBRC    &kp F7      &kp F8      &kp F9     &kp RBRC                     &kp LBKT  &kp N7      &kp N8      &kp N9     &kp RBKT
+    &kp COLON   &kp F4      &kp F5      &kp F6     &kp PLUS                     &kp EQUAL &kp N4      &kp N5      &kp N6     &kp SEMI
+    &kp TILDE   &kp F1      &kp F2      &kp F3     &kp LALT                     &kp BSLH  &kp N1      &kp N2      &kp N3     &kp CAPS
+                                        &kp LPAR   &kp RPAR                     &trans    &kp N0
             >;
         };
 
-        right_layer {
-            display-name = "NUM & NAVIGATION";
+        sym_layer {
             bindings = <
-&kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0
-&kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END &bootloader 
-                              &trans   &kp ESC    &trans  &trans
+    &kp ESC     &kp LBKT    &kp RBKT    &kp LBRC   &kp RBRC                     &kp TILDE &kp AMPS   &kp ASTRK &kp EQUAL &kp PLUS
+    &kp COLON   &kp LCTRL   &kp LALT    &kp LSHFT  &kp PLUS                     &kp GRAVE &kp DLLR   &kp PRCNT &kp CARET &kp SEMI
+    &kp TILDE   &kp MINUS   &kp UNDER   &kp F3     &kp SQT                      &kp DQT   &kp EXCL   &kp AT    &kp HASH  &kp BSLH
+                                        &kp LPAR   &kp RPAR                     &none     &trans
             >;
         };
 
-        left_layer {
-            display-name = "SYMBOL";
+        nav_layer {
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader       &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans       &tog MOUSE     &trans
+    &kp PSCRN   &none       &kp UP      &none      &kp LBRC                        &kp LBRC  &msc SCRL_UP  &mmv MOVE_UP   &msc SCRL_DOWN  &none
+    &none       &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                       &kp PG_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+    &none       &none       &none       &none      &kp HOME                        &kp END   &mkp MCLK      &none          &none           &none
+                                        &none      &trans                          &mkp LCLK &mkp RCLK
             >;
         };
 
-        tri_layer {
-            display-name = "FUNC";
+        media_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog WIN  &kp C_MUTE    &kp C_PREV
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &studio_unlock    &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans    &kp C_VOL_DN  &kp C_NEXT
-                          &trans   &trans          &trans        &trans
+    &none       &none       &none       &none       &bootloader                     &bootloader &none         &none         &none           &none
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none                           &none       &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP    &kp C_NEXT
+    &none       &none       &none       &none       &none                           &kp C_STOP  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     
+                                        &trans      &none                           &kp C_PP    &kp C_MUTE     
             >;
         };
-        mouse {
-            display-name = "MOUSE";
+
+   /*     fun_layer {
             bindings = <
-&tog MOUSE  &mkp MB4  &mkp MCLK  &mkp MB5   &trans      &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP     &msc SCRL_RIGHT    &tog MOUSE
-&trans      &trans    &trans     &trans     &trans      &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT    &trans
-&trans      &trans    &trans     &trans     &trans      &trans     &mkp MB4  &mkp MCLK  &mkp MB5  &trans
-                                 &kp SPACE  &kp LSHIFT  &mkp LCLK  &mkp RCLK
+    &kp F12 &kp F7  &kp F8  &kp F9      &kp PSCRN                           &none   &none       &none       &none       &none
+    &kp F11 &kp F4  &kp F5  &kp F6      &kp SLCK                            &none   &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
+    &kp F10 &kp F1  &kp F2  &kp F3      &kp PAUSE_BREAK                     &none   &none       &none       &none       &none
+                            &kp K_APP   &kp SPACE                           &none   &trans
             >;
-        };
+        }; */
     };
 };
