@@ -4,8 +4,8 @@
 
 1. [[https://github.com/itstoxsec/FSweep-zmk/fork][fork]] this repo
 2. (optional) update keymap and config file
-3. wait github action to build the firmware, then you download and decompress the zip file
-4. connect left or right half to your computer with use cable
+3. wait for github actions to build the firmware, then you download and extract the zip file
+4. connect left or right half to your computer with usb cable
 5. left or right half enter bootloader, you can enter bootloader by
    1) pressing the =&bootloader= key (requires that keyboard is connected to a device for typing)
    2) double-clicking the reset button
