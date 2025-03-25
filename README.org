@@ -2,7 +2,7 @@
 
 ** flash new firmware
 
-1. [[https://github.com/sky-bro/zmk-config/fork][fork]] this repo
+1. [[https://github.com/itstoxsec/FSweep-zmk/fork][fork]] this repo
 2. (optional) update keymap and config file
 3. wait github action to build the firmware, then you download and decompress the zip file
 4. connect left or right half to your computer with use cable
