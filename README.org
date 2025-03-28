@@ -16,6 +16,9 @@
    2) filename with 'right' is for the right half of keyboard
    3) filename with 'reset' is for the left/right half to forget its bluetooth connection info (when left & right half is not able to connect, to forget paired devices)
 
+[[https://nickcoutsos.github.io/keymap-editor/][layout editor]]
+
+
 * References
 
 - [[https://github.com/davidphilipbarr/Sweep][Sweep Repo]]
