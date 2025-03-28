@@ -58,9 +58,9 @@
 
         num_layer {
             bindings = <
-&kp LBRC   &kp F7  &kp F8  &kp F9    &kp RBRC    &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT
-&kp COLON  &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp SEMI
-&kp TILDE  &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp CAPS
+&kp LBRC   &kp F7  &kp F8  &kp F9    &kp RBRC    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp FSLH
+&kp COLON  &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS
+&kp TILDE  &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp MINUS
                            &kp LPAR  &kp RPAR    &trans     &kp N0
             >;
         };
