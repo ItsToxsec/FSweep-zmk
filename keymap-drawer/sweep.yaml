@@ -1,0 +1,150 @@
+layers:
+  '0':
+  - {t: Q, h: TAB}
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - {t: P, h: TAB}
+  - {t: A, h: LEFT SHIFT}
+  - S
+  - D
+  - {t: F, h: LEFT WIN}
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, h: LEFT SHIFT}
+  - {t: Z, h: LEFT CONTROL}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: LEFT CONTROL}
+  - LEFT ALT
+  - {t: SPACE, h: '1'}
+  - {t: ENTER, h: '2'}
+  - BSPC
+  '1':
+  - TAB
+  - '&mkp LCLK'
+  - '&mkp MB3'
+  - '&mkp RCLK'
+  - KP NUMLOCK
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '`'
+  - LSHFT
+  - LEFT
+  - UP ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - ''''
+  - LCTRL
+  - '['
+  - (
+  - ']'
+  - )
+  - '-'
+  - '7'
+  - '8'
+  - '9'
+  - \
+  - END
+  - {type: held}
+  - KP MULTIPLY
+  - +
+  '2':
+  - TAB
+  - AC HOME
+  - END
+  - INS
+  - {t: ▽, type: trans}
+  - VOLUME UP
+  - F1
+  - F2
+  - F3
+  - F10
+  - LSHFT
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - F4
+  - F5
+  - F6
+  - F11
+  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - F7
+  - F8
+  - F9
+  - F12
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - {type: held}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+combos:
+- p: [20, 21]
+  k: ESCAPE
+- p: [16, 17]
+  k: DEL
+- p: [12, 13]
+  k: BACKSPACE
+- p: [0, 4]
+  k: Ctl+ BACKSPACE

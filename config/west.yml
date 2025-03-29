@@ -2,23 +2,30 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: sweep-pro-shield-module
-      url-base: https://github.com/sky-bro
-    - name: zmk
-      url-base: https://github.com/sky-bro
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
     - name: zmk
-      remote: zmk
-      revision: k4i-sweep-kbd
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
-    - name: sweep-pro-shield-module
-      remote: sweep-pro-shield-module
+      
+    # modules
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: win
+    - name: zmk-hid-trackball-interface
+      remote: englmaxi
       revision: main
   self:
     path: config
