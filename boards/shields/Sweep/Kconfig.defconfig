@@ -11,23 +11,6 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if LVGL
-
-config LV_Z_VDB_SIZE
-    default 64
-
-config LV_DPI_DEF
-    default 148
-
-config LV_Z_BITS_PER_PIXEL
-    default 1
-
-choice LV_COLOR_DEPTH
-    default LV_COLOR_DEPTH_1
-endchoice
-
-endif
-
 if SHIELD_SWEEP_CENTRAL_DONGLE || SHIELD_SWEEP_CENTRAL_LEFT || SHIELD_SWEEP_PERIPHERAL_LEFT || SHIELD_SWEEP_PERIPHERAL_RIGHT
 
 config ZMK_SPLIT
