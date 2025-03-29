@@ -76,9 +76,9 @@
 
         nav_layer {
             bindings = <
-&kp PSCRN  &none     &kp UP    &none      &kp LBRC     &kp LBRC   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
-&none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP    &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none      &none     &none     &none      &kp HOME     &kp END    &mkp MCLK       &none           &none            &none
+&kp PSCRN  &none     &kp UP    &none      &none        &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+&none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP    &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MCLK
+&none      &none     &none     &none      &kp HOME     &kp END    &kp H           &kp J           &kp K            &kp L
                                &none      &trans       &mkp LCLK  &mkp RCLK
             >;
         };
