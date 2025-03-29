@@ -1,9 +1,0 @@
-/ {
-    aliases {
-        indicator-led = &led2;
-    };
-
-    leds {
-        status = "okay";
-    };
-};
