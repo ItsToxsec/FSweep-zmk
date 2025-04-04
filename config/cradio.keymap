@@ -11,10 +11,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE    0
-#define NUM     1
-#define SYM     2
-#define NAV     3
-#define MED     4
+#define ALT     1
+#define NUM     2
+#define SYM     3
+#define NAV     4
+#define MED     5
 
 / {
     chosen { zmk,charmap = &charmap_us; };
@@ -48,11 +49,20 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
+             bindings = <
 &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J        &kp L        &kp U        &kp Y       &kp SEMI
 &ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G        &kp M        &ht LSHFT N  &ht LCTRL E  &ht RALT I  &ht LGUI O
 &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH
                                      &lt MED BSPC &lt NAV DEL  &lt NUM RET  &lt SYM SPACE
+            >;
+        };
+
+    alt_layer {
+             bindings = <
+&kp Q       &kp W       &kp E       &kp R       &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
+&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F &kp G                      &kp H           &ht LSHFT J &ht LCTRL K &ht RALT L      &ht LGUI SEMI
+&kp Z       &kp X       &kp C       &kp V       &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
+                                    &lt MED DEL &lt NAV BSPC               &lt NUM SPACE   &lt SYM RET
             >;
         };
 
@@ -85,7 +95,7 @@
 
         media_layer {
             bindings = <
-&sys_reset  &none     &none      &none      &bootloader     &bootloader   &none         &none         &none         &sys_reset
+&sys_reset  &none     &none      &none      &bootloader     &bootloader   &to ALT       &to BASE      &none         &sys_reset
 &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &out OUT_USB    &out OUT_BLE  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
 &none       &none     &none      &none      &bt BT_CLR      &kp C_STOP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
                                  &trans     &none           &kp C_PP      &kp C_MUTE
