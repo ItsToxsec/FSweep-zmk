@@ -28,7 +28,7 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: my_keyboard
+    shield: cradio
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # keyboard: sweep pro
@@ -39,5 +39,5 @@ include:
   - board: nice_nano_v2
     shield: sweep_pro_right
   - board: nice_nano_v2
-    shield: my_keyboard
+    shield: msweep_pro
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
