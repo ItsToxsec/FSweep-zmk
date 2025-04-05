@@ -25,8 +25,8 @@ include:
   #   #snippet: zmk-usb-logging
   # - board: nice_nano_v2
   #   shield: cradio_right
-  - board: nice_nano_v2
-    shield: settings_reset
+  # - board: nice_nano_v2
+  #   shield: settings_reset
   # - board: nice_nano_v2
   #   shield: cradio_dongle
   #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
@@ -34,10 +34,13 @@ include:
   # keyboard: sweep pro
   - board: nice_nano_v2
     shield: sweep_pro_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     snippet: studio-rpc-usb-uart
     #snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: sweep_pro_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
     shield: sweep_pro_dongle
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: settings_reset
