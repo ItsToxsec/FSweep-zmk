@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CRADIO_DONGLE
+if SHIELD_SWEEP_PRO_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "Cradio Dongle"
+	default "SWEEP_PRO Dongle"
 	
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_RIGHT || SHIELD_CRADIO_DONGLE 
+if SHIELD_SWEEP_PRO_LEFT || SHIELD_SWEEP_PRO_RIGHT || SHIELD_SWEEP_PRO_DONGLE 
 
 config ZMK_SPLIT
 	default y
