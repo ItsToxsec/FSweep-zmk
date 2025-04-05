@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_ENKI42_DONGLE
+if SHIELD_CRADIO_DONGLE
 
 config ZMK_KEYBOARD_NAME
 	default "Cradio Dongle"
