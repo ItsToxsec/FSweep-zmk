@@ -59,10 +59,10 @@
 
     alt_layer {
              bindings = <
-&kp Q       &kp W       &kp E       &kp R       &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F &kp G                      &kp H           &ht LSHFT J &ht LCTRL K &ht RALT L      &ht LGUI SEMI
-&kp Z       &kp X       &kp C       &kp V       &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
-                                    &lt MED DEL &lt NAV BSPC               &lt NUM SPACE   &lt SYM RET
+&kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
+&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht LSHFT J &ht LCTRL K &ht RALT L      &ht LGUI SEMI
+&kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
+                                    &lt MED BSPC &lt NAV DEL                &lt NUM SPACE   &lt SYM RET
             >;
         };
 
