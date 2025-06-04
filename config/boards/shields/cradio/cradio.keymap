@@ -50,37 +50,28 @@
 
         default_layer {
              bindings = <
-&kp Q       &kp W       &kp F        &kp P        &kp B        &kp J        &kp L        &kp U        &kp Y       &kp SEMI
-&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G        &kp M        &ht LSHFT N  &ht LCTRL E  &ht RALT I  &ht LGUI O
-&kp Z       &kp X       &kp C        &kp D        &kp V        &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt MED BSPC &lt NAV DEL  &lt NUM RET  &lt SYM SPACE
-            >;
-        };
-
-    alt_layer {
-             bindings = <
-&kp Q       &kp W       &kp E       &kp R       &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F &kp G                      &kp H           &ht LSHFT J &ht LCTRL K &ht RALT L      &ht LGUI SEMI
-&kp Z       &kp X       &kp C       &kp V       &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
-                                    &lt MED DEL &lt NAV BSPC               &lt NUM SPACE   &lt SYM RET
+&kp Q       &kp W       &kp F        &kp P        &kp B         &kp J         &kp L        &kp U        &kp Y       &kp SEMI
+&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G         &kp M         &ht LSHFT N  &ht LCTRL E  &ht RALT I  &ht LGUI O
+&kp Z       &kp X       &kp C        &kp D        &kp V         &kp K         &kp H        &kp COMMA    &kp DOT     &kp FSLH
+                                     &lt MED DEL  &lt NAV BSPC  &lt NUM SPACE &lt SYM RET
             >;
         };
 
         num_layer {
             bindings = <
-&kp LBRC   &kp F7  &kp F8  &kp F9    &kp RBRC    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp FSLH
-&kp COLON  &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS
-&kp TILDE  &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp MINUS
-                           &kp LPAR  &kp RPAR    &trans     &kp N0
+&kp F10    &kp F7  &kp F8  &kp F9    &kp RBRC    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp FSLH
+&kp F11    &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS
+&kp F12    &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp MINUS
+                           &kp LSHFT &kp ESC     &trans     &kp N0
             >;
         };
 
         sym_layer {
             bindings = <
-&kp CAPS   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC    &kp TILDE  &kp AMPS  &kp ASTRK  &kp EQUAL  &kp PLUS
-&kp COLON  &kp LCTRL  &kp LALT   &kp TAB   &kp PLUS    &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp SEMI
-&kp TILDE  &kp MINUS  &kp UNDER  &kp ESC   &kp SQT     &kp DQT    &kp EXCL  &kp AT     &kp HASH   &kp BSLH
-                                 &kp LPAR  &kp RPAR    &none      &trans
+&kp CAPS   &kp LBKT   &kp RBKT        &kp LBRC  &kp RBRC    &kp PIPE   &kp AMPS  &kp ASTRK  &kp EQUAL  &kp PLUS
+&kp COLON  &kp LCTRL  &ht LSHFT LALT  &kp TAB   &kp PLUS    &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp SEMI
+&kp TILDE  &kp MINUS  &kp UNDER       &kp ESC   &kp SQT     &kp DQT    &kp EXCL  &kp AT     &kp HASH   &kp BSLH
+                                      &kp LPAR  &kp RPAR    &none      &trans
             >;
         };
 
@@ -95,7 +86,7 @@
 
         media_layer {
             bindings = <
-&sys_reset  &none     &none      &none      &bootloader     &bootloader   &to ALT       &to BASE      &none         &sys_reset
+&sys_reset  &none     &none      &none      &bootloader     &bootloader   &none         &none         &none         &sys_reset
 &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &out OUT_USB    &out OUT_BLE  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
 &none       &none     &none      &none      &bt BT_CLR      &kp C_STOP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
                                  &trans     &none           &kp C_PP      &kp C_MUTE
