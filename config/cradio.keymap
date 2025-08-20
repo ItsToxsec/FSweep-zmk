@@ -1,8 +1,6 @@
-/*
- * Copyright (c) 2020 duckyb
- *
- * SPDX-License-Identifier: MIT
- */
+
+// Copyright (c) 2022 The ZMK Contributors
+// SPDX-License-Identifier: MIT
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
@@ -13,23 +11,15 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// Layer definitions
 #define BASE    0
 #define ALT     1
 #define NUM     2
 #define SYM     3
 #define NAV     4
 #define MED     5
-// -----------------
-
-&sk {
-	// don't release mods on other mods presses
-	ignore-modifiers;
-};
-
 
 / {
-    // chosen { zmk,charmap = &charmap_us; };
+    chosen { zmk,charmap = &charmap_us; };
 
     behaviors {
         ht: hold_tap {
@@ -62,18 +52,18 @@
         default_layer {
              bindings = <
 &kp Q       &kp W       &kp F        &kp P        &kp B         &kp J         &kp L        &kp U        &kp Y       &kp SEMI
-&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G         &kp M         &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht LGUI O
+&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G         &kp M         &ht LSHFT N  &ht LCTRL E  &ht RALT I  &ht LGUI O
 &kp Z       &kp X       &kp C        &kp D        &kp V         &kp K         &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt MED BSPC &lt NAV DEL   &lt NUM RET   &lt SYM SPACE
+                                     &lt MED DEL  &lt NAV BSPC  &lt NUM SPACE &lt SYM RET
             >;
         };
 
         num_layer {
             bindings = <
-&kp F10      &kp F7       &kp F8        &kp F9        &kp RBRC    &kp ASTRK  &kp N7        &kp N8        &kp N9       &kp FSLH
-&ht LGUI F11 &ht LALT F4  &ht LCTRL F5  &ht LSHFT F6  &kp PLUS    &kp EQUAL  &ht RSHFT N4  &ht RCTRL N5  &ht RALT N6  &ht RGUI PLUS
-&kp F12      &kp F1       &kp F2        &kp F3        &kp ESC     &kp BSLH   &kp N1        &kp N2        &kp N3       &kp MINUS
-                                        &kp TAB       &kp ESC     &trans     &kp N0 
+&kp F10    &kp F7  &kp F8  &kp F9    &kp RBRC    &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp FSLH
+&kp F11    &kp F4  &kp F5  &kp F6    &kp PLUS    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS
+&kp F12    &kp F1  &kp F2  &kp F3    &kp LALT    &kp BSLH   &kp N1  &kp N2  &kp N3  &kp MINUS
+                           &kp LSHFT &kp ESC     &trans     &kp N0
             >;
         };
 
