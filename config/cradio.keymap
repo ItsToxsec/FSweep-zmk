@@ -79,9 +79,9 @@
 
         num_layer {
             bindings = <
-&kp LBRC        &kp F7       &kp F8        &kp F9          &kp RBRC    &kp ASTRK  &kp N7        &kp N8        &kp N9       &kp FSLH
-&ht LGUI COLON  &ht LALT F4  &ht LCTRL F5  &ht LSHFT F6    &kp PLUS    &kp EQUAL  &ht RSHFT N4  &ht RCTRL N5  &ht RALT N6  &ht RGUI PLUS
-&kp DEL         &kp F1       &kp F2        &kp F3          &kp TAB     &kp BSLH   &kp N1        &kp N2        &kp N3       &kp MINUS
+&kp F12         &kp F7       &kp F8        &kp F9          &kp RBRC    &kp ASTRK  &kp N7        &kp N8        &kp N9       &kp FSLH
+&ht LGUI F11    &ht LALT F4  &ht LCTRL F5  &ht LSHFT F6    &kp PLUS    &kp EQUAL  &ht RSHFT N4  &ht RCTRL N5  &ht RALT N6  &ht RGUI PLUS
+&kp F10         &kp F1       &kp F2        &kp F3          &kp TAB     &kp BSLH   &kp N1        &kp N2        &kp N3       &kp MINUS
                                            &kp LPAR        &kp RPAR    &trans     &kp N0
             >;
         };
