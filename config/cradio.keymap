@@ -23,15 +23,10 @@
 #define MED     6
 // -----------------
 
-&sk {
-	// don't release mods on other mods presses
-	ignore-modifiers;
-};
-
-
 / {
-    // chosen { zmk,charmap = &charmap_us; };
-
+    chosen {
+        zmk,charmap = &charmap_us;
+    };
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
