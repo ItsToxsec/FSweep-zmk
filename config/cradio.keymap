@@ -63,7 +63,7 @@
 
         combo_rshft {
             bindings = <&kp RSHFT>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
         };
 
         combo_esc {
