@@ -68,12 +68,12 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 0>;
+            key-positions = <0 1>;
         };
 
         combo_dash {
             bindings = <&kp MINUS>;
-            key-positions = <9 8>;
+            key-positions = <8 9>;
         };
     };
 
