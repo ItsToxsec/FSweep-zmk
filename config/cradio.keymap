@@ -58,12 +58,12 @@
 
         combo_lshft {
             bindings = <&kp LSHFT>;
-            key-positions = <13 23>;
+            key-positions = <23 22>;
         };
 
         combo_rshft {
             bindings = <&kp RSHFT>;
-            key-positions = <16 26>;
+            key-positions = <26 25>;
         };
 
         combo_esc {
