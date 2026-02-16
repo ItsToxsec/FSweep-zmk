@@ -141,10 +141,10 @@
 
         nav_layer {
             bindings = < 
-&kp PSCRN  &none   		  &none      &none        &none        &none      &kp C_AC_BACK &kp C_AC_FORWARD &none     &none
-&kp LGUI   &kp C_VOL_DOWN &kp C_MUTE &kp C_VOL_UP &kp PG_UP    &kp PG_DN  &kp UP        &kp DOWN         &kp LEFT  &kp RIGHT
-&none      &none     	  &kp LALT   &kp TAB      &kp HOME     &kp END    &kp H         &kp J            &kp K     &kp L
-                               		 &none        &trans       &mkp LCLK  &mkp RCLK
+&kp PSCRN  &none   		&none      &none        &none        &none      &kp C_AC_BACK &kp C_AC_FORWARD &none     &none
+&kp LGUI   &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &kp PG_UP    &kp PG_DN  &kp UP        &kp DOWN         &kp LEFT  &kp RIGHT
+&none      &none     	&kp LALT   &kp TAB      &kp HOME     &kp END    &kp H         &kp J            &kp K     &kp L
+                              	   &none        &trans       &mkp LCLK  &mkp RCLK
             >;
         };
 
