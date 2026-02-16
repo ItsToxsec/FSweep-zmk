@@ -94,7 +94,7 @@
 &kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
 &ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
 &kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
-                                    &lt MED BSPC &lt NAV DEL                &lt NUM RET     &lt SYM SPACE
+                                    &lt MED BSPC &lt NAV DEL                &lt NUM RET     &lt FUN SPACE
             >;
         };    
 	
@@ -103,7 +103,7 @@
     &kp Q       &kp W       &kp F       &kp P         &kp B                     &kp J           &kp L          &kp U       &kp Y           &kp SEMI
     &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T   &kp G                     &kp M           &ht RSHFT N    &ht RCTRL E &ht RALT I      &ht RGUI O
     &kp Z       &kp X       &kp C       &kp D         &kp V                     &kp K           &kp H          &kp COMMA   &kp DOT         &kp FSLH
-                                        &lt MED BSPC  &lt NAV DEL               &lt NUM RET     &lt SYM SPACE
+                                        &lt MED BSPC  &lt NAV DEL               &lt NUM RET     &lt FUN SPACE
             >;
         };
 
