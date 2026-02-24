@@ -75,6 +75,11 @@
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <29 28>;
+        };
     };
 
     keymap {
