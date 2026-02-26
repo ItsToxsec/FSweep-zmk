@@ -123,10 +123,10 @@
 
         num_layer {
             bindings = <
-&kp BSLH  &kp SQT  &kp LBKT  &kp LBRC   &kp LPAR     &kp RPAR   &kp RBRC  &kp RBKT   &kp GRAVE  &kp EQUAL
-&kp N1    &kp N2   &kp N3    &kp N4     &kp N5       &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
-&kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER
-                             &kp LSHFT  &kp LALT     &trans     &none
+&kp BSLH  &kp LEFT_BRACKET  &kp LBRC  &kp LPAR   &kp SQT      &kp GRAVE  &kp RPAR  &kp RBRC   &kp RBKT   &kp EQUAL
+&kp N1    &kp N2            &kp N3    &kp N4     &kp N5       &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
+&kp EXCL  &kp AT            &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER
+                                      &kp LSHFT  &kp LALT     &trans     &none
             >;
         };
 
