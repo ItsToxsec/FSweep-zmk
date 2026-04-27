@@ -80,6 +80,16 @@
             bindings = <&kp TAB>;
             key-positions = <29 28>;
         };
+
+        combo_nav {
+            bindings = <&mo 5>;
+            key-positions = <31 30>;
+        };
+
+        combo_num {
+            bindings = <&mo 3>;
+            key-positions = <33 32>;
+        };
     };
 
     keymap {
