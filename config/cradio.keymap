@@ -102,53 +102,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_lshft {
-            bindings = <&kp LSHFT>;
-            key-positions = <12 13>;
-            layers = <1 2 2>;
-        };
-
-        combo_rshft {
-            bindings = <&kp RSHFT>;
-            key-positions = <16 17>;
-            layers = <1 2 2>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <31 32>;
-        };
-
-        combo_esc {
+        esc_combo {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-        };
-
-        combo_dash {
-            bindings = <&kp MINUS>;
-            key-positions = <9 8>;
-        };
-
-        combo_lsuper {
-            bindings = <&kp LGUI>;
-            key-positions = <10 20>;
-        };
-
-        combo_rsuper {
-            bindings = <&kp RGUI>;
-            key-positions = <19 29>;
-        };
-
-        combo_nav {
-            bindings = <&mo 6>;
-            key-positions = <31 30>;
-            layers = <1 2 2>;
-        };
-
-        combo_num {
-            bindings = <&mo 4>;
-            key-positions = <33 32>;
-            layers = <1 2 2>;
         };
     };
 
