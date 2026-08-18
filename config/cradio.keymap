@@ -32,9 +32,7 @@
 };
 
 / {
-    chosen { 
-        zmk,charmap = &charmap_us;
-    };
+    chosen { zmk,charmap = &charmap_us; };
 
     behaviors {
         ht: hold_tap {
@@ -107,13 +105,13 @@
         combo_lshft {
             bindings = <&kp LSHFT>;
             key-positions = <12 13>;
-            layers = <0 2 2>;
+            layers = <1 2 2>;
         };
 
         combo_rshft {
             bindings = <&kp RSHFT>;
             key-positions = <16 17>;
-            layers = <0 2 2>;
+            layers = <1 2 2>;
         };
 
         combo_tab {
@@ -144,88 +142,88 @@
         combo_nav {
             bindings = <&mo 6>;
             key-positions = <31 30>;
-            layers = <0 2 2>;
+            layers = <1 2 2>;
         };
 
         combo_num {
             bindings = <&mo 4>;
             key-positions = <33 32>;
-            layers = <0 2 2>;
+            layers = <1 2 2>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        qwerty_layer {
             bindings = <
-&kp Q       &kp X       &kp M        &kp W        &kp V      &kp J      &kp F        &kp FSLH     &kp SEMI    &kp DOT
-&ht LGUI N  &ht LALT R  &ht LCTRL T  &ht LSHFT S  &kp G      &kp P      &ht RSHFT H  &ht RCTRL A  &ht RALT E  &ht LGUI I
-&kp B       &kp L       &kp D        &kp C        &kp Z      &kp K      &kp Y        &kp O        &kp U       &kp COMMA
-                                     &lt 7 BSPC   &lt 5 DEL  &lt 4 RET  &lt 6 SPACE
+&kp Q  &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I            &kp O         &kp P
+&kp A  &kp S       &kp D        &kp F        &kp G        &kp H      &kp J        &kp K            &kp L         &kp SEMI
+&kp Z  &ht LALT X  &ht LCTRL C  &ht LSHFT V  &kp B        &kp N      &ht RSHFT M  &ht RCTRL COMMA  &ht RALT DOT  &kp FSLH
+                                &lt 7 BSPC   &lt 6 DEL    &lt 4 RET  &lt 5 SPACE
             >;
         };
 
-        alt_layer {
+        GalMod_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T      &kp Y      &kp U        &kp I        &kp O       &kp P
-&ht LGUI A  &ht LALT S  &ht LCTRL D  &ht LSHFT F  &kp G      &kp H      &ht RSHFT J  &ht RCTRL K  &ht RALT L  &ht LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B      &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt 7 BSPC   &lt 6 DEL  &lt 4 RET  &lt 5 SPACE
+&kp Q  &kp X       &kp M        &kp W        &kp V        &kp J      &kp F        &kp FSLH     &kp SEMI    &kp DOT
+&kp N  &kp R       &kp T        &kp S        &kp G        &kp P      &kp H        &kp A        &kp E       &kp I
+&kp B  &ht LALT L  &ht LCTRL D  &ht LSHFT C  &kp Z        &kp K      &ht RSHFT Y  &ht RCTRL O  &ht RALT U  &kp COMMA
+                                &lt 7 BSPC   &lt 5 DEL    &lt 4 RET  &lt 6 SPACE
             >;
         };
 
         colemak_layer {
             bindings = <
-&kp Q       &kp W       &kp F        &kp P        &kp B      &kp J      &kp L        &kp U        &kp Y       &kp SEMI
-&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G      &kp M      &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O
-&kp Z       &kp X       &kp C        &kp D        &kp V      &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt 7 BSPC   &lt 6 DEL  &lt 4 RET  &lt 5 SPACE
+&kp Q       &kp W       &kp F        &kp P        &kp B        &kp J      &kp L        &kp U        &kp Y       &kp SEMI
+&ht LGUI A  &ht LALT R  &ht LCTRL S  &ht LSHFT T  &kp G        &kp M      &ht RSHFT N  &ht RCTRL E  &ht RALT I  &ht RGUI O
+&kp Z       &kp X       &kp C        &kp D        &kp V        &kp K      &kp H        &kp COMMA    &kp DOT     &kp FSLH
+                                     &lt 7 BSPC   &lt 6 DEL    &lt 4 RET  &lt 5 SPACE
             >;
         };
 
         gaming_layer {
             bindings = <
-&kp T  &kp Q  &kp W  &kp E       &gt TAB R  &trans  &trans  &trans  &trans  &trans
-&kp M  &kp A  &kp S  &kp D       &kp F      &trans  &trans  &trans  &trans  &trans
-&kp B  &kp Z  &kp X  &kp C       &kp V      &trans  &trans  &trans  &trans  &trans
-                     &kp LSHIFT  &kp SPACE  &to 0   &trans
+&kp T  &kp Q  &kp W  &kp E       &gt TAB R    &trans  &trans  &trans  &trans  &trans
+&kp M  &kp A  &kp S  &kp D       &kp F        &trans  &trans  &trans  &trans  &trans
+&kp B  &kp Z  &kp X  &kp C       &kp V        &trans  &trans  &trans  &trans  &trans
+                     &kp LSHIFT  &kp SPACE    &to 1   &trans
             >;
         };
 
         num_layer {
             bindings = <
-&kp BSLH  &kp LBKT  &kp LBRC  &kp LPAR   &kp SQT    &kp GRAVE  &kp RPAR  &kp RBRC   &kp RBKT   &kp EQUAL
-&kp N1    &kp N2    &kp N3    &kp N4     &kp N5     &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER
-                              &kp LSHFT  &kp LALT   &trans     &none
+&kp BSLH  &kp LBKT  &kp LBRC  &kp LPAR   &kp SQT      &kp GRAVE  &kp RPAR  &kp RBRC   &kp RBKT   &kp EQUAL
+&kp N1    &kp N2    &kp N3    &kp N4     &kp N5       &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
+&kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER
+                              &kp LSHFT  &kp LALT     &trans     &none
             >;
         };
 
         fun_layer {
             bindings = <
-&kp F21  &kp F22  &kp F23  &kp F24  &none    &none      &none     &none    &none    &none
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6     &kp F7    &kp F8   &kp F9   &kp F10
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp F16    &kp F17   &kp F18  &kp F19  &kp F20
-                           &none    &trans   &kp LCTRL  &kp LALT
+&kp F21  &kp F22  &kp F23  &kp F24  &none      &none      &none     &none    &none    &none
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp F6     &kp F7    &kp F8   &kp F9   &kp F10
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &kp F16    &kp F17   &kp F18  &kp F19  &kp F20
+                           &none    &trans     &kp LCTRL  &kp LALT
             >;
         };
 
         nav_layer {
             bindings = <
-&kp PSCRN  &none         &none       &none         &none      &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none
-&kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP  &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT
-&none      &none         &kp LALT    &kp TAB       &kp HOME   &kp END    &kp H          &kp J             &kp K     &kp L
-                                     &none         &trans     &mkp LCLK  &mkp RCLK
+&kp PSCRN  &none         &none       &none         &none        &none      &kp C_AC_BACK  &kp C_AC_FORWARD  &none     &none
+&kp LGUI   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PG_UP    &kp PG_DN  &kp UP         &kp DOWN          &kp LEFT  &kp RIGHT
+&none      &none         &kp LALT    &kp TAB       &kp HOME     &kp END    &kp H          &kp J             &kp K     &kp L
+                                     &none         &trans       &mkp LCLK  &mkp RCLK
             >;
         };
 
         media_layer {
             bindings = <
-&sys_reset  &to 2     &none      &studio_unlock  &bootloader   &bootloader   &to 0         &to 1         &to 3         &sys_reset
-&kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB  &out OUT_BLE  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-&none       &none     &none      &none           &bt BT_CLR    &kp C_STOP    &bt_0         &bt_1         &bt_2         &bt_3
-                                 &trans          &none         &kp C_PP      &kp C_MUTE
+&sys_reset  &to 2     &none      &studio_unlock  &bootloader     &bootloader   &to 1       &to 0         &to 3         &sys_reset
+&kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT       &out OUT_USB    &out OUT_BLE  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
+&none       &none     &none      &none           &bt BT_CLR      &kp C_STOP    &bt_0       &bt_1         &bt_2         &bt_3
+                                 &trans          &none           &kp C_PP      &kp C_MUTE
             >;
         };
     };
